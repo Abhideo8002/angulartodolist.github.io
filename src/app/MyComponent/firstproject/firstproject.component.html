@@ -1,0 +1,5 @@
+<app-add-firstproject (firstprojectAdd)="addFirstproject($event)"></app-add-firstproject>
+<h4> Your Firstproject </h4>
+<div *ngFor=" let firstproject of firstproject">
+     <app-firstproject-item [firstproject]="firstproject" (firstprojectDelete)="deleteFirstproject($event)"></app-firstproject-item>
+</div>
